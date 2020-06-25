@@ -60,6 +60,7 @@ resource "aws_instance" "blueharvest-terraform-eks-openvpn" {
     destination = "~/scripts"
 
     connection {
+      host = aws_instance.blueharvest-terraform-eks-openvpn.public_ip
       type        = "ssh"
       user        = "ubuntu"
       private_key = "${tls_private_key.blueharvest-terraform-eks.private_key_pem}"
