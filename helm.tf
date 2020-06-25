@@ -1,9 +1,9 @@
 resource "null_resource" "helm_charts" {
   depends_on = ["module.eks", "module.vpc"]
 
-  triggers {
-    cluster_endpoint = "${module.eks.cluster_endpoint}"
-  }
+  #triggers {
+  #  cluster_endpoint = "${module.eks.cluster_endpoint}"
+  #}
 
   provisioner "local-exec" {
     working_dir = "${path.module}"
