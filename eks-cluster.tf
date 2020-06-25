@@ -19,9 +19,9 @@ module "eks" {
                      )
   )}"
 
-  worker_group_count = "1"
-  map_users          = "${var.map_users}"
-  map_users_count    = "${var.map_users_count}"
-  map_roles          = "${var.map_roles}"
-  map_roles_count    = "${var.map_roles_count}"
+  #worker_group_count = "1"
+  #map_users          = "${var.map_users}"
+  #map_users_count    = "${var.map_users_count}"
+  #map_roles          = "${var.map_roles}"
+  #map_roles_count    = "${var.map_roles_count}"
 }
